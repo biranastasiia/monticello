@@ -1,0 +1,95 @@
+.form {
+  width: 60%;
+  background-color: #fff;
+  position: absolute;
+  top: -400px;
+  left: 20%;
+  z-index: 2;
+
+  &__line {
+    margin: 98px auto 38px;
+    width: 15%;
+    height: 2px;
+    border: none;
+    color: $dark-blue;
+    background-color: $dark-blue;
+  }
+
+  &__title {
+    font-family: $gotham-bold;
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $dark-blue;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__blocks {
+    @include flex(space-between, center, row);
+    margin: 0 60px 80px;
+  }
+
+  &__span {
+    font-family: $gotham-medium;
+    color: $dark-blue;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 43px;
+    text-decoration: none;
+  }
+
+  &__button {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    border: 1px solid $dark-blue;
+    font-family: $gotham-medium;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $dark-blue;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    width: 140px;
+  }
+
+  &__button:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+}
+
+.form i {
+  color: #7e5aff;
+  margin-right: 10px;
+}
+
+input {
+  padding: 20px 0;
+  border: none;
+  border-bottom: 1px solid #4b5562;
+  width: 300px;
+  @include placeholder {
+    font-family: $gotham-medium;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4b5562;
+    opacity: 0.5;
+  }
+}
+
+input:hover {
+  border-bottom: 1px solid #000;
+  @include placeholder {
+    color: #4b5562;
+    opacity: 1;
+  }
+}

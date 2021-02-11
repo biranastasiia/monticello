@@ -1,0 +1,41 @@
+iframe {
+  margin-bottom: -10px;
+}
+
+.footer {
+  width: 100vw;
+  height: 80vh;
+  background-image: url("../images/footer_bg.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: relative;
+
+  &__background {
+    width: 100vw;
+    height: 80vh;
+    background: linear-gradient(to top right, #55b7ff, #7e5aff);
+    opacity: 0.9;
+  }
+
+  &__content {
+    height: 80vh;
+    @include flex(space-around, center, row);
+  }
+
+  &__logo {
+    fill: #fff;
+    margin-bottom: 42px;
+  }
+
+  &__copyright {
+    font-family: $gotham-medium;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  &__copyright:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

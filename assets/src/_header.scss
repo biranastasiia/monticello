@@ -1,0 +1,147 @@
+.header-block {
+  position: relative;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+
+  &__slide {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/bg.png");
+    background-size: cover;
+  }
+
+  &__gradient {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right top, $blue-color, $purple-color);
+    opacity: 0.96;
+    margin: 0;
+    @include flex(center, center, column);
+  }
+
+  &__title {
+    font-family: $gotham-bold;
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    margin-bottom: 4%;
+  }
+
+  &__descr {
+    font-family: $gotham-medium;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: #ffffff;
+  }
+}
+
+.header-block .slick-dots {
+  top: 30%;
+  right: 30px;
+  @include flex(space-between, flex-end, column);
+  width: 10%;
+  height: 30%;
+}
+
+.header-block .slick-dots li button:before {
+  font-size: 9px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f111";
+  text-align: center;
+  opacity: 1;
+  color: #ffffff;
+}
+
+.header-block .slick-dots li.slick-active button:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f111";
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.navigation {
+  position: absolute;
+  top: 0px;
+  left: 10%;
+  @include flex(space-between, center, row);
+  width: 80%;
+}
+
+.logo svg {
+  fill: #ffffff;
+  max-width: 241px;
+  width: 100%;
+}
+
+.menu {
+  width: 40%;
+  &__list {
+    @include flex(space-between, center, row);
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: $gotham-medium;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  &__link::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    font-size: 9px;
+    position: absolute;
+    left: -20px;
+    top: -3px;
+    color: #ffffff;
+  }
+
+  &__burger {
+    display: none;
+  }
+}
+
+.social {
+  width: 13%;
+  @include flex(space-between, center, row);
+
+  &__fab {
+    width: 40px;
+    height: 40px;
+    @include flex(center, center, row);
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+.arrow {
+  position: absolute;
+  bottom: 40px;
+  left: 48%;
+
+  &__svg {
+    fill: #ffffff;
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+  }
+}

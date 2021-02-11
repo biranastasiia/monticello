@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("../fonts/GothamMedium/gotham-medium-webfont.woff"),
+    url("../fonts/GothamMedium/gotham-medium-webfont.woff2"),
+    url("../fonts/GothamMedium/Gotham\ Medium\ Regular.ttf");
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../fonts/gothambold/gothambold1.eot"),
+    url("../fonts/gothambold/gothambold1.ttf"),
+    url("../fonts/gothambold/gothambold1.woff");
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../fonts/GothamBook/GothamBook.eot"),
+    url("../fonts/GothamBook/GothamBook.ttf"),
+    url("../fonts/GothamBook/GothamBook.woff");
+}
+
+$blue-color: #55b6fe;
+$purple-color: #7d5bf9;
+$dark-blue: #2c4058;
+$main-font: "Open Sans", sans-serif;
+$gotham-medium: "Gotham Medium";
+$gotham-bold: "Gotham Bold";
+$gotham-book: "Gotham Book";
